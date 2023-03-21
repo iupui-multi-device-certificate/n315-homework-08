@@ -1,0 +1,20 @@
+.form-element {
+  border: none;
+  border-bottom: 3px solid $dark;
+
+  // height: 60px;
+  // padding: 20px;
+  padding: 0 0 6.5px 0;
+
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.form-title {
+  color: $dark;
+  font-size: 2rem;
+  margin-bottom: $spacing-xl;
+  font-weight: bold;
+  text-shadow: $shadow-dark;
+  text-align: center;
+}

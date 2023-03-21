@@ -1,0 +1,36 @@
+footer {
+  z-index: 1030;
+  position: fixed;
+  bottom: 0;
+
+  //https://stackoverflow.com/questions/27351467/full-screen-picture-background-room-for-footer
+  //see Harshul Pandav
+  //have to set width for position fixed to work
+  width: 100%;
+  margin-top: auto;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+    color: $dark;
+
+    padding: 0 2.5rem 1.625rem 2.5rem;
+
+    .copyright {
+      font-size: $font-size--15;
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+    .social {
+      display: flex;
+      gap: 40.4px;
+    }
+  }
+}
