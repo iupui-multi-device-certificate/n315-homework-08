@@ -11,6 +11,11 @@
   font-weight: normal;
 }
 
+html,
+body {
+  min-height: 100vh;
+  max-width: 100%;
+}
 //reset for forms
 //https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
 button,
