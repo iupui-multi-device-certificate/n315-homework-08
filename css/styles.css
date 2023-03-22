@@ -123,9 +123,23 @@ a {
   color: #393939;
 }
 .hero .hero-cta {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
-.hero .hero-cta .hero-title {
+.hero .hero-cta .large-circle {
+  background-color: #ffd972;
+  border-radius: 50%;
+  width: 22.349rem;
+  height: 22.349rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-cta .large-circle .hero-title {
   font-size: 1.5rem;
   font-family: "Caveat";
   margin-bottom: 1.875rem;
@@ -134,13 +148,29 @@ a {
   line-height: 32px;
   margin-bottom: 2rem;
 }
-.hero .hero-cta .hero-subtitle {
+.hero .hero-cta .large-circle .hero-subtitle {
   font-size: 0.813rem;
   font-family: "Lato";
   letter-spacing: 1.3px;
   line-height: 16px;
+  width: 45%;
 }
-.hero .hero-cta .hero-callout {
+.hero .hero-cta .small-circle {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -35%;
+  width: 10.493rem;
+  height: 10.493rem;
+  background-color: #fcbcb8;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-cta .small-circle .hero-callout {
+  width: 63%;
   font-family: "Lato";
   font-size: 0.625rem;
   letter-spacing: 1px;
