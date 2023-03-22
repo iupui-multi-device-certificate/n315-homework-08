@@ -89,10 +89,12 @@ textarea {
   font-display: swap;
 }
 body {
-  display: flex;
-  flex-direction: column;
   /* base font size */
   font-size: 1rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {
@@ -322,10 +324,8 @@ a {
 }
 footer {
   z-index: 1030;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  margin-top: auto;
+  margin-top: 100px;
   font-style: italic;
   color: #393939;
   display: flex;

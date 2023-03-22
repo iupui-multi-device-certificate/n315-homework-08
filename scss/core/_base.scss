@@ -2,11 +2,13 @@
 //https://css-tricks.com/couple-takes-sticky-footer/
 
 body {
-  display: flex;
-  flex-direction: column;
   // font-family: $body-font-family;
   /* base font size */
   font-size: 1rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {

@@ -1,13 +1,12 @@
 footer {
   z-index: 1030;
-  position: fixed;
-  bottom: 0;
 
   //https://stackoverflow.com/questions/27351467/full-screen-picture-background-room-for-footer
   //see Harshul Pandav
   //have to set width for position fixed to work
   width: 100%;
-  margin-top: auto;
+  // margin-top: auto;
+  margin-top: 100px;
 
   font-style: italic;
   color: $dark;
