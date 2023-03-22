@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo"
+          ><img src="./images/logo.png" alt=""
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#browse" class="nav-link">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a href="create-recipe.html" class="nav-link">Create Recipe</a>
+          </li>
+          <li class="nav-item">
+            <a href="your-recipes.html" class="nav-link">Your Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="home.html"
+              class="nav-link btn btn--medium btn--naplesYellow"
+              >Logout</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section class="section-recipe-form">
+        <form class="recipe-form" onsubmit="event.preventDefault();">
+          <div class="form-title">Hey Michael, edit your recipe!</div>
+          <fieldset>
+            <div class="file-input">
+              <!-- extra div to get a custom placeholder since can't replace button text -->
+              <div>Edit Recipe Image</div>
+              <input
+                type="file"
+                name="recipeImage"
+                id="recipeImage"
+                aria-label="recipeImage"
+                class="form-element"
+              />
+              <!-- better would be to use an picture/paperclip combo icon with alt/tooltip for screen reader. this would translate across screen sizes better -->
+              <label for="recipeImage" class="btn btn--file-selector btn--rose"
+                >Attach File</label
+              >
+            </div>
+
+            <input
+              type="text"
+              name="recipeName"
+              id="recipeName"
+              placeholder="Supreme Pizza"
+              aria-label="recipeName"
+              class="form-element"
+            />
+
+            <input
+              type="text"
+              name="recipeDescription"
+              id="recipeDescription"
+              placeholder="Make pizza night super duper out of this…"
+              aria-label="recipeDescription"
+              class="form-element"
+            />
+
+            <input
+              type="text"
+              name="recipeTotalTime"
+              id="recipeTotalTime"
+              placeholder="1h 24 min"
+              aria-label="recipeTotalTime"
+              class="form-element"
+            />
+
+            <input
+              type="text"
+              name="recipeServingSize"
+              id="recipeServingSize"
+              placeholder="4 servings"
+              aria-label="recipeServingSize"
+              class="form-element"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Enter Ingredients:</legend>
+            <input
+              type="text"
+              name="ingredient-1"
+              id="ingredient-1"
+              placeholder="Ingredient #1"
+              aria-label="ingredient-1"
+              class="form-element"
+            />
+            <input
+              type="text"
+              name="ingredient-2"
+              id="ingredient-2"
+              placeholder="Ingredient #2"
+              aria-label="ingredient-2"
+              class="form-element"
+            />
+            <div class="last-row">
+              <input
+                type="text"
+                name="ingredient-3"
+                id="ingredient-3"
+                placeholder="Ingredient #3"
+                aria-label="ingredient-3"
+                class="form-element"
+              />
+              <button class="btn--round btn--rose btn--add" id="addIngredient">
+                +
+              </button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Enter Instructions:</legend>
+            <input
+              type="text"
+              name="instruction-1"
+              id="instruction-1"
+              placeholder="Instruction #1"
+              aria-label="instruction-1"
+              class="form-element"
+            />
+            <input
+              type="text"
+              name="instruction-2"
+              id="instruction-2"
+              placeholder="Instruction #2"
+              aria-label="instruction-2"
+              class="form-element"
+            />
+            <div class="last-row">
+              <input
+                type="text"
+                name="instruction-3"
+                id="instruction-3"
+                placeholder="Instruction #3"
+                aria-label="instruction-3"
+                class="form-element"
+              />
+              <button class="btn--round btn--rose btn--add" id="addInstruction">
+                +
+              </button>
+            </div>
+          </fieldset>
+          <input
+            type="submit"
+            value="Submit Changes"
+            class="btn btn--wide btn--rose"
+            name="updateRecipe"
+            id="updateRecipe"
+          />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="footer-content"> -->
+      <div class="copyright">Copyright &copy; 2019 The Jungle Cook</div>
+      <ul class="footer-nav">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Recipes by Category</a></li>
+        <li><a href="#">Privacy and Copyright</a></li>
+        <li><a href="#">Create Recipe</a></li>
+        <li><a href="#">Your Recipes</a></li>
+      </ul>
+
+      <!-- ignore web accessibility warning since have alt on image tag -->
+      <div class="social">
+        <a href="#">
+          <img src="./images/social/facebook.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./images/social/instagram.png" alt="instagram"
+        /></a>
+      </div>
+      <!-- </div> -->
+    </footer>
+
+    <script src="lib/jquery-3.6.3.min.js"></script>
+    <script src="app/app.js" type="module"></script>
+  </body>
+</html>
