@@ -93,3 +93,19 @@
     }
   }
 }
+
+@media only screen and (max-width: $breakpoint-md) {
+  .hero {
+    .hero-cta {
+      .large-circle {
+        width: 16.113rem;
+        height: 16.113rem;
+      }
+
+      .small-circle {
+        width: 7.565rem;
+        height: 7.565rem;
+      }
+    }
+  }
+}
