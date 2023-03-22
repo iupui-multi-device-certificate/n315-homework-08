@@ -13,11 +13,11 @@
 
   color: $dark;
 
-  //wait on font stuff - need non-Italic replacement for Caveat
-  // font-family: "Caveat";
-  // font-size: 1.563rem;
-  // letter-spacing: 12.5px;
-  // line-height: 33px;
+  //TODO: get non-Italic replacement for Caveat
+  font-family: "Caveat";
+  font-size: 1.563rem;
+  letter-spacing: 12.5px;
+  line-height: 33px;
 
   &--round {
     @extend .btn;
@@ -52,4 +52,46 @@
   &--naplesYellow {
     background-color: $naplesYellow;
   }
+
+  &--file-selector {
+    padding: 0.5rem;
+
+    // width: 110px;
+    // height: 36.2px;
+
+    font-family: "Caveat";
+    font-size: 1rem;
+    // font-size: 1.063rem;
+
+    border: none;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    color: $dark;
+    cursor: pointer;
+  }
 }
+
+// ::file-selector-button {
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: flex-end;
+
+//   width: 110px;
+//   height: 36.2px;
+
+//   font-family: "Caveat";
+//   font-size: 1.063rem;
+
+//   border: none;
+//   border-radius: $border-radius;
+//   box-shadow: $shadow;
+
+//   text-decoration: none;
+
+//   color: $dark;
+//   background-color: $rose;
+// }

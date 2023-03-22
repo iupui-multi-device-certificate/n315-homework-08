@@ -1,3 +1,7 @@
+//if time could set up form element to be extended
+
+$margin-bottom-large: 5rem;
+
 .form-element {
   border: none;
   border-bottom: 3px solid $dark;
@@ -6,15 +10,73 @@
   // padding: 20px;
   padding: 0 0 6.5px 0;
 
-  margin-bottom: 1.25rem;
+  margin-bottom: $margin-bottom-large;
   width: 100%;
+  font-family: "Lato";
+  font-weight: $light-weight;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  line-height: 27px;
+
+  &--small {
+    font-size: 0.75rem;
+    margin-bottom: 3.125rem;
+  }
 }
 
+//https://www.w3schools.com/howto/howto_css_placeholder.asp
+//fix for Firefox makes placeholder lighter
+::placeholder {
+  opacity: 1; /* Firefox */
+}
+
+.file-input {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  border-bottom: 3px solid $dark;
+
+  padding: 0 0 6.5px 0;
+
+  margin-bottom: $margin-bottom-large;
+  width: 100%;
+  font-family: "Lato";
+  font-weight: $light-weight;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  line-height: 27px;
+}
+
+// https://stackoverflow.com/questions/6105116/how-to-remove-no-file-selected-from-type-file-inputs
+.hidden-input {
+  color: transparent;
+  &::file-selector-button {
+    display: none;
+  }
+}
+
+//Lato black
+//font-weight 900 per https://fonts.google.com/specimen/Lato
+.login-form,
+.signup-form {
+  .form-title {
+    font-family: "Lato";
+    font-weight: $dark-weight;
+    font-size: 1.875rem;
+  }
+
+  .form-subtitle {
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 0.75rem;
+  }
+}
 .form-title {
   color: $dark;
-  font-size: 2rem;
+  font-size: 1.563rem;
   margin-bottom: $spacing-xl;
   font-weight: bold;
-  text-shadow: $shadow-dark;
-  text-align: center;
 }
