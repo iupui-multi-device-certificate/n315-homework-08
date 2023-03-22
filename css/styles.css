@@ -98,7 +98,7 @@ a {
   text-decoration: none;
 }
 
-.active:after {
+.underline:after {
   content: "";
   display: block;
   width: 80%;
@@ -267,6 +267,36 @@ a {
   background-color: #393939;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #f25c54;
+    height: 100vh;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 footer {
   z-index: 1030;
   position: fixed;

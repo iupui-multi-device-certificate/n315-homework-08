@@ -15,13 +15,6 @@
   padding: 2.375rem 3.125rem 0 3.125rem;
 }
 
-//TODO: determine styling since this will be image
-// .nav-logo {
-//   font-size: 2.1rem;
-//   font-weight: 500;
-//   color: $brand-primary;
-// }
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -47,42 +40,42 @@
   background-color: $dark;
 }
 
-//TODO: nav media query
-// @media only screen and (max-width: $breakpoint-nav) {
-//   .nav-menu {
-//     position: fixed;
-//     left: -100%;
-//     top: 0;
-//     flex-direction: column;
-//     justify-content: center;
-//     gap: 3rem;
+//footer shows b/c fixed. not sure how to have both?
+//this is why on mobile, they just switch to footer nav completely
+@media only screen and (max-width: $breakpoint-md) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
 
-//     background-color: $brand-primary;
-//     height: 100vh;
-//     width: 100%;
+    background-color: $watermelon;
+    height: 100vh;
+    width: 100%;
 
-//     transition: 0.3s;
-//     background-color: $brand-primary;
-//   }
+    transition: 0.3s;
+  }
 
-//   .nav-menu.active {
-//     left: 0;
-//   }
+  .nav-menu.active {
+    left: 0;
+  }
 
-//   .hamburger {
-//     display: block;
-//     cursor: pointer;
-//   }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 
-//   .hamburger.active .bar:nth-child(2) {
-//     opacity: 0;
-//   }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-//   .hamburger.active .bar:nth-child(1) {
-//     transform: translateY(8px) rotate(45deg);
-//   }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-//   .hamburger.active .bar:nth-child(3) {
-//     transform: translateY(-8px) rotate(-45deg);
-//   }
-// }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
