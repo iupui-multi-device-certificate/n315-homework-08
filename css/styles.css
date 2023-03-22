@@ -23,6 +23,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
+  background-color: transparent;
 }
 
 fieldset {
@@ -33,6 +34,10 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+.bg-naplesYellow {
+  background-color: #ffd972;
 }
 
 @font-face {
