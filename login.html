@@ -7,6 +7,8 @@
     <title>The Jungle Cook</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
+  <!-- TODO: body background color -->
   <body>
     <header class="header">
       <nav class="navbar">
@@ -41,21 +43,75 @@
     </header>
 
     <main id="app">
-      <section class="hero">
-        <div class="hero-cta">
-          <div class="large-circle">
-            <h1 class="hero-title">The Jungle Cook</h1>
-            <p class="hero-subtitle">
-              The home to various recipes of your choice. Add your own recipe
-              today and fill the world with joy!
-            </p>
-          </div>
-          <div class="small-circle">
-            <p class="hero-callout">
-              Want to be a Jungle Cook? Go ahead and the kitchen is yours!
-            </p>
-          </div>
-        </div>
+      <section class="section-login">
+        <form class="login-form">
+          <div class="form-title">Login:</div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            aria-label="email"
+            class="form-element"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            aria-label="password"
+            class="form-element"
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="btn btn--wide btn--naplesYellow"
+            name="login"
+            id="login"
+          />
+        </form>
+        <form class="signup-form">
+          <div class="form-title">Sign up:</div>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            aria-label="firstName"
+            class="form-element"
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            aria-label="lastName"
+            class="form-element"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address..."
+            aria-label="email"
+            class="form-element"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            aria-label="password"
+            class="form-element"
+          />
+          <input
+            type="submit"
+            value="Sign Up"
+            class="btn btn--wide btn--naplesYellow"
+            name="signup"
+            id="signup"
+          />
+        </form>
       </section>
     </main>
 

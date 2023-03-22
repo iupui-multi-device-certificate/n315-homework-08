@@ -368,3 +368,29 @@ footer {
     justify-content: center;
   }
 }
+.section-login {
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 15.625rem;
+}
+.section-login .login-form {
+  flex: 1 45%;
+}
+.section-login .signup-form {
+  flex: 1 55%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-login {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-login .login-form {
+    flex: 1 100%;
+  }
+  .section-login .signup-form {
+    flex: 1 100%;
+  }
+}
