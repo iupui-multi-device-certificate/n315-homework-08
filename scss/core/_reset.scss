@@ -29,3 +29,9 @@ textarea {
 fieldset {
   border: 0;
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

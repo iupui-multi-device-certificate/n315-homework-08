@@ -30,12 +30,24 @@ $margin-bottom-large: 5rem;
   opacity: 1; /* Firefox */
 }
 
+//https://www.benmarshall.me/styling-file-inputs/
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .file-input {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
 
+  width: 100%;
   border: none;
   border-bottom: 3px solid $dark;
 
@@ -50,12 +62,26 @@ $margin-bottom-large: 5rem;
   line-height: 27px;
 }
 
-// https://stackoverflow.com/questions/6105116/how-to-remove-no-file-selected-from-type-file-inputs
-.hidden-input {
-  color: transparent;
-  &::file-selector-button {
-    display: none;
-  }
+.form-element:focus,
+.file-input:hover {
+  background-color: rgba($rose, 0.3);
+}
+
+.last-row {
+  position: relative;
+}
+
+.btn--add {
+  // margin-bottom: 6px;
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+legend {
+  font-family: "Lato";
+  font-weight: $dark-weight;
+  font-size: 1.875rem;
+  margin-bottom: 2rem;
 }
 
 //Lato black
@@ -79,4 +105,27 @@ $margin-bottom-large: 5rem;
   font-size: 1.563rem;
   margin-bottom: $spacing-xl;
   font-weight: bold;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .form-element,
+  .file-input {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .btn,
+  .form-element,
+  .file-input {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .btn,
+  .form-element,
+  .file-input {
+    font-size: 0.75rem;
+  }
 }

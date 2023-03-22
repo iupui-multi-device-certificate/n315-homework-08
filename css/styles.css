@@ -29,6 +29,12 @@ fieldset {
   border: 0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: "Caveat";
   src: url("fonts/Caveat-Regular.ttf") format("truetype");
@@ -208,7 +214,7 @@ section {
     right: -20%;
   }
 }
-.btn, .btn--round {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +229,14 @@ section {
   line-height: 33px;
 }
 .btn--round {
-  border-radius: 1.875rem;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  font-family: "Gill Sans";
+  font-weight: 300;
+  font-size: 1rem;
 }
 .btn--xsmall {
   height: 2.5rem;
@@ -260,6 +273,7 @@ section {
   white-space: nowrap;
   color: #393939;
   cursor: pointer;
+  display: inline-block;
 }
 
 .form-element {
@@ -287,11 +301,22 @@ section {
   opacity: 1; /* Firefox */
 }
 
+[type=file] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .file-input {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
   border: none;
   border-bottom: 3px solid #393939;
   padding: 0 0 6.5px 0;
@@ -304,11 +329,26 @@ section {
   line-height: 27px;
 }
 
-.hidden-input {
-  color: transparent;
+.form-element:focus,
+.file-input:hover {
+  background-color: rgba(239, 167, 167, 0.3);
 }
-.hidden-input::file-selector-button {
-  display: none;
+
+.last-row {
+  position: relative;
+}
+
+.btn--add {
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+
+legend {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1.875rem;
+  margin-bottom: 2rem;
 }
 
 .login-form .form-title,
@@ -331,6 +371,26 @@ section {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .form-element,
+  .file-input {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn,
+  .form-element,
+  .file-input {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .btn,
+  .form-element,
+  .file-input {
+    font-size: 0.75rem;
+  }
+}
 .header {
   position: sticky;
   top: 0;
