@@ -44,7 +44,7 @@
 
     <main id="app">
       <section class="section-login">
-        <form class="login-form">
+        <form class="login-form" onsubmit="event.preventDefault();">
           <div class="form-title">Login:</div>
           <input
             type="email"
@@ -70,7 +70,7 @@
             id="login"
           />
         </form>
-        <form class="signup-form">
+        <form class="signup-form" onsubmit="event.preventDefault();">
           <div class="form-subtitle">don't have an account?</div>
           <div class="form-title">Sign up:</div>
           <input
