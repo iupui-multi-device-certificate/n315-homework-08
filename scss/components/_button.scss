@@ -12,6 +12,7 @@
   text-decoration: none;
 
   color: $dark;
+  cursor: pointer;
 
   //TODO: get non-Italic replacement for Caveat
   font-family: "Caveat";
@@ -29,6 +30,7 @@
     font-family: "Gill Sans";
     font-weight: $light-weight;
     font-size: 1rem;
+    cursor: pointer;
   }
 
   &--xsmall {
