@@ -130,7 +130,7 @@ section {
 .underline:after {
   content: "";
   display: block;
-  width: 80%;
+  width: 100%;
   height: 3px;
   background-color: #393939;
 }
@@ -511,6 +511,49 @@ footer {
     justify-content: center;
   }
 }
+.card-holder {
+  padding: 3rem;
+  height: 263px;
+}
+.card-holder .card {
+  border-radius: 1.625rem;
+  display: flex;
+}
+.card-holder .card .image-holder {
+  position: relative;
+}
+.card-holder .card .image-holder img {
+  border-radius: 1.875rem;
+  max-width: 300px;
+}
+.card-holder .card .card-body {
+  background-color: #ffffff;
+  max-width: 224px;
+  color: #393939;
+  font-family: "Lato";
+  border-radius: 1.875rem;
+  padding: 2.625rem 2.938rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.card-holder .card .card-body .card-title {
+  font-weight: 900;
+  font-size: 0.938rem;
+}
+.card-holder .card .card-body .card-text {
+  font-size: 0.563rem;
+}
+.card-holder .card .card-body .time,
+.card-holder .card .card-body .servings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  font-size: 0.625rem;
+}
+
 .section-login {
   display: flex;
   gap: 15.625rem;
@@ -533,4 +576,10 @@ footer {
   .section-login .signup-form {
     flex: 1 100%;
   }
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }

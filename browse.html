@@ -7,8 +7,7 @@
     <title>The Jungle Cook</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
-  <body class="bg-naplesYellow">
+  <body>
     <header class="header">
       <nav class="navbar">
         <a href="index.html" class="nav-logo"
@@ -42,76 +41,36 @@
     </header>
 
     <main id="app">
-      <section class="section-login">
-        <form class="login-form" onsubmit="event.preventDefault();">
-          <div class="form-title">Login:</div>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            aria-label="email"
-            class="form-element form-element--small"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            aria-label="password"
-            class="form-element form-element--small"
-          />
-          <input
-            type="submit"
-            value="Login"
-            class="btn btn--wide btn--naplesYellow"
-            name="login"
-            id="login"
-          />
-        </form>
-        <form class="signup-form" onsubmit="event.preventDefault();">
-          <div class="form-subtitle">don't have an account?</div>
-          <div class="form-title">Sign up:</div>
-          <input
-            type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="First Name"
-            aria-label="firstName"
-            class="form-element form-element--small"
-          />
-          <input
-            type="text"
-            name="lastName"
-            id="lastName"
-            placeholder="Last Name"
-            aria-label="lastName"
-            class="form-element form-element--small"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            aria-label="email"
-            class="form-element form-element--small"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            aria-label="password"
-            class="form-element form-element--small"
-          />
-          <input
-            type="submit"
-            value="Sign Up"
-            class="btn btn--wide btn--naplesYellow"
-            name="signup"
-            id="signup"
-          />
-        </form>
+      <section class="section-browse">
+        <h1 class="section-title">Recipes: Try some today!</h1>
+        <div class="cards">
+          <div class="card-holder">
+            <div class="card">
+              <div class="image-holder">
+                <img
+                  src="./images/recipes/thumb/recipe-pizza_thumb.png"
+                  alt="pizza"
+                />
+              </div>
+              <div class="card-body">
+                <h1 class="card-title underline">Supreme Pizza</h1>
+                <p class="card-text">
+                  Make pizza night super duper out of this world with homemade
+                  pizza. This recipe is supreme with vegetables and two types of
+                  meat. Yum!
+                </p>
+                <p class="time">
+                  <img src="./images/recipes/time.png" alt="time" />
+                  <span>1h 24min</span>
+                </p>
+                <p class="servings">
+                  <img src="./images/recipes/servings.png" alt="time" />
+                  <span>4 servings</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
