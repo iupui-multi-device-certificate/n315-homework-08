@@ -1,7 +1,5 @@
 //NOTE: this is mobile first design
 
-//TODO: hide buttons and show on hover on large screen
-
 .cards {
   display: flex;
   flex-direction: column;
@@ -97,3 +95,21 @@
     justify-content: flex-start;
   }
 }
+
+//TODO: hide buttons and show on hover on large screen if required
+// @media only screen and (max-width: $breakpoint-md) {
+//   .cards {
+//     .card {
+//       .image-holder {
+//         .btn-overlay {
+//           display: block;
+//         }
+
+//         .button-holder {
+//           display: flex;
+//           justify-content: space-between;
+//         }
+//       }
+//     }
+//   }
+// }
