@@ -11,12 +11,6 @@
   font-weight: normal;
 }
 
-html,
-body {
-  min-height: 100vh;
-  max-width: 100%;
-}
-
 button,
 input,
 select,
@@ -106,10 +100,6 @@ select:focus {
 body {
   /* base font size */
   font-size: 1rem;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 ul {
@@ -479,7 +469,6 @@ legend {
 footer {
   z-index: 1030;
   width: 100%;
-  margin-top: 100px;
   font-style: italic;
   color: #393939;
   display: flex;
