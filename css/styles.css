@@ -523,7 +523,9 @@ footer {
   }
 }
 .cards {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
 }
 
 .card {
@@ -584,6 +586,27 @@ footer {
   gap: 0.5rem;
 }
 
+@media only screen and (min-width: 992px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 0 45%;
+    max-width: 524px;
+  }
+  .card-row {
+    display: flex;
+  }
+  .card-body {
+    flex-basis: 224px;
+    max-height: 263px;
+    padding: 5%;
+  }
+  .button-holder {
+    justify-content: flex-start;
+  }
+}
 .section-login {
   display: flex;
   gap: 15.625rem;

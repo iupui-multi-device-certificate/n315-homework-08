@@ -1,15 +1,15 @@
 //NOTE: this is mobile first design
-//TODO: width on large screen
-//TODO: horizontal card on large screen
+
 //TODO: hide buttons and show on hover on large screen
 
 .cards {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
 }
 
 .card {
   width: 100%;
-  // padding: 3.125rem;
   margin-bottom: 3.125rem;
 }
 
@@ -22,7 +22,6 @@
   //https://www.w3schools.com/howto/howto_css_image_text.asp
   .btn-overlay {
     //take no chances since button is inline by default
-    // display: block;
     display: block;
     position: absolute;
     top: 50%;
@@ -70,4 +69,31 @@
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    //use 45% to take into account gap b/n items
+    flex: 1 0 45%;
+    max-width: 524px;
+  }
+
+  .card-row {
+    display: flex;
+  }
+  .card-body {
+    flex-basis: 224px;
+
+    max-height: 263px;
+    padding: 5%;
+  }
+
+  .button-holder {
+    justify-content: flex-start;
+  }
 }
