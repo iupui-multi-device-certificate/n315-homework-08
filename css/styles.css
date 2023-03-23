@@ -135,6 +135,14 @@ section {
   background-color: #393939;
 }
 
+.section-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1.563rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 .hero {
   background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url("../images/hero.jpg");
   background-size: cover;
@@ -254,6 +262,7 @@ section {
   width: 127.66px;
   height: 42.01px;
   white-space: nowrap;
+  font-size: 1.25rem;
 }
 .btn--medium {
   width: 158px;
@@ -513,8 +522,15 @@ footer {
     justify-content: center;
   }
 }
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.125rem;
+}
+
 .card-holder {
-  padding: 3rem;
+  margin-bottom: 3.125rem;
   height: 263px;
 }
 .card-holder .card {
@@ -528,9 +544,28 @@ footer {
   border-radius: 1.875rem;
   max-width: 300px;
 }
+.card-holder .card .image-holder .btn-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.card-holder .card .image-holder .button-holder {
+  display: none;
+  gap: 0.5rem;
+}
+.card-holder .card .image-holder:hover .btn-overlay {
+  display: block;
+}
+.card-holder .card .image-holder:hover .button-holder {
+  display: flex;
+}
 .card-holder .card .card-body {
   background-color: #ffffff;
   max-width: 224px;
+  align-self: flex-start;
   color: #393939;
   font-family: "Lato";
   border-radius: 1.875rem;
@@ -556,6 +591,14 @@ footer {
   font-size: 0.625rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .cards .card-holder .card .image-holder .btn-overlay {
+    display: block;
+  }
+  .cards .card-holder .card .image-holder .button-holder {
+    display: flex;
+  }
+}
 .section-login {
   display: flex;
   gap: 15.625rem;
@@ -579,9 +622,23 @@ footer {
     flex: 1 100%;
   }
 }
-.cards {
+.section-recipes {
+  background-image: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url("../images/recipes/recipe-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.recipe-content {
+  width: 85%;
+  margin: 9rem auto;
 }

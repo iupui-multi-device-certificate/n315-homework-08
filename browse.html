@@ -41,32 +41,54 @@
     </header>
 
     <main id="app">
-      <section class="section-browse">
-        <h1 class="section-title">Recipes: Try some today!</h1>
-        <div class="cards">
-          <div class="card-holder">
-            <div class="card">
-              <div class="image-holder">
-                <img
-                  src="./images/recipes/thumb/recipe-pizza_thumb.png"
-                  alt="pizza"
-                />
-              </div>
-              <div class="card-body">
-                <h1 class="card-title underline">Supreme Pizza</h1>
-                <p class="card-text">
-                  Make pizza night super duper out of this world with homemade
-                  pizza. This recipe is supreme with vegetables and two types of
-                  meat. Yum!
-                </p>
-                <p class="time">
-                  <img src="./images/recipes/time.png" alt="time" />
-                  <span>1h 24min</span>
-                </p>
-                <p class="servings">
-                  <img src="./images/recipes/servings.png" alt="time" />
-                  <span>4 servings</span>
-                </p>
+      <section class="section-recipes">
+        <div class="recipe-content">
+          <h1 class="section-title">Recipes: Try some today!</h1>
+          <div class="cards">
+            <div class="card-holder">
+              <div class="card">
+                <div class="image-holder">
+                  <img
+                    src="./images/recipes/thumb/recipe-pizza_thumb.png"
+                    alt="pizza"
+                  />
+                  <button
+                    class="btn btn--small btn-overlay btn--naplesYellow"
+                    id="viewButton"
+                  >
+                    View
+                  </button>
+                  <div class="button-holder">
+                    <button
+                      class="btn btn--small btn--naplesYellow"
+                      id="editButton"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      class="btn btn--small btn--naplesYellow"
+                      id="deleteButton"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title underline">Supreme Pizza</h1>
+                  <p class="card-text">
+                    Make pizza night super duper out of this world with homemade
+                    pizza. This recipe is supreme with vegetables and two types
+                    of meat. Yum!
+                  </p>
+                  <p class="time">
+                    <img src="./images/recipes/time.png" alt="time" />
+                    <span>1h 24min</span>
+                  </p>
+                  <p class="servings">
+                    <img src="./images/recipes/servings.png" alt="time" />
+                    <span>4 servings</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

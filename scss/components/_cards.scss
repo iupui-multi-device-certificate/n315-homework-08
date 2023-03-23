@@ -1,0 +1,109 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 3.125rem;
+}
+
+.card-holder {
+  margin-bottom: 3.125rem;
+  // padding: 3rem;
+  height: 263px;
+
+  .card {
+    border-radius: $border-radius;
+    display: flex;
+
+    .image-holder {
+      position: relative;
+
+      img {
+        border-radius: $border-radius-lg;
+        max-width: 300px;
+      }
+
+      //https://www.w3schools.com/howto/howto_css_image_text.asp
+      .btn-overlay {
+        //take no chances since button is inline by default
+        // display: block;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+
+      .button-holder {
+        display: none;
+        gap: 0.5rem;
+
+        // .btn {
+        //   cursor: pointer;
+        // }
+      }
+
+      &:hover .btn-overlay {
+        display: block;
+      }
+
+      &:hover .button-holder {
+        display: flex;
+      }
+    }
+
+    .card-body {
+      background-color: $light;
+      max-width: 224px;
+
+      //https://www.devsamples.com/css/flexbox-prevent-element-stretching
+      align-self: flex-start;
+
+      color: $dark;
+      font-family: "Lato";
+      border-radius: $border-radius-lg;
+      padding: 2.625rem 2.938rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+
+      .card-title {
+        font-weight: $dark-weight;
+        font-size: 0.938rem;
+      }
+
+      .card-text {
+        font-size: 0.563rem;
+      }
+
+      .time,
+      .servings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        font-size: 0.625rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .cards {
+    .card-holder {
+      .card {
+        .image-holder {
+          .btn-overlay {
+            display: block;
+          }
+
+          .button-holder {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

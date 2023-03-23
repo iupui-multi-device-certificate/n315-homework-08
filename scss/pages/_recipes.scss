@@ -1,0 +1,28 @@
+.section-recipes {
+  background-image: linear-gradient(
+      rgba($lightTeal, $opacity),
+      rgba($lightTeal, $opacity)
+    ),
+    url("../images/recipes/recipe-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // height: 100vh;
+  min-height: 100%;
+
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.recipe-content {
+  width: 85%;
+  margin: 9rem auto;
+}

@@ -34,3 +34,11 @@ section {
   height: 3px;
   background-color: $dark;
 }
+
+.section-title {
+  font-family: "Lato";
+  font-weight: $dark-weight;
+  font-size: 1.563rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
