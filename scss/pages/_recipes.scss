@@ -12,3 +12,13 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+.browse-recipes {
+  button {
+    display: none;
+  }
+
+  .btn-overlay {
+    display: none;
+  }
+}
