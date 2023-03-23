@@ -523,65 +523,54 @@ footer {
   }
 }
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 3.125rem;
+  background-color: pink;
 }
 
 .card {
+  width: 100%;
   margin-bottom: 3.125rem;
-  height: 263px;
-  border-radius: 1.625rem;
-  display: flex;
 }
-.card .image-holder {
+
+.image-holder {
   position: relative;
 }
-.card .image-holder img {
-  border-radius: 1.875rem;
-  width: 100%;
+.image-holder img {
+  min-width: 100%;
 }
-.card .image-holder .btn-overlay {
-  display: none;
+.image-holder .btn-overlay {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-.card .image-holder .button-holder {
-  display: none;
-  gap: 0.5rem;
-}
-.card .image-holder:hover .btn-overlay {
-  display: block;
-}
-.card .image-holder:hover .button-holder {
-  display: flex;
-  justify-content: space-between;
-}
-.card .card-body {
+
+.card-body {
   background-color: #ffffff;
-  flex-basis: 224px;
   color: #393939;
   font-family: "Lato";
   border-radius: 1.875rem;
+  margin-bottom: 1.25rem;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
 }
-.card .card-body .card-title {
+
+.card-title {
   font-weight: 900;
   font-size: 0.938rem;
 }
-.card .card-body .card-text {
+
+.card-text {
   font-size: 0.563rem;
 }
-.card .card-body .time,
-.card .card-body .servings {
+
+.time,
+.servings {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -589,21 +578,12 @@ footer {
   font-size: 0.625rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .cards .card .image-holder .btn-overlay {
-    display: block;
-  }
-  .cards .card .image-holder .button-holder {
-    display: flex;
-    justify-content: space-between;
-  }
+.button-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
-@media only screen and (max-width: 576px) {
-  .cards .card {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+
 .section-login {
   display: flex;
   gap: 15.625rem;
@@ -627,11 +607,6 @@ footer {
     flex: 1 100%;
   }
 }
-.recipe-content {
-  width: 85%;
-  height: 100vh;
-}
-
 .recipe-hero {
   background: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url("../images/recipes/recipe-hero.jpg") no-repeat center center fixed;
   background-size: cover;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="recipe-hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo"
+          ><img src="./images/logo.png" alt=""
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="browse.html" class="nav-link">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a href="create-recipe.html" class="nav-link">Create Recipe</a>
+          </li>
+          <li class="nav-item">
+            <!-- TODO: style as button -->
+            <a
+              href="login.html"
+              class="nav-link btn btn--medium btn--naplesYellow"
+              >Login</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section class="section-recipes">
+        <div class="recipe-content">
+          <h1 class="section-title">Recipes: Try some today!</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="image-holder">
+                <img
+                  src="./images/recipes/thumb/recipe-pizza_thumb.png"
+                  alt="pizza"
+                />
+                <button
+                  class="btn btn--small btn-overlay btn--naplesYellow"
+                  id="viewButton"
+                >
+                  View
+                </button>
+                <div class="button-holder">
+                  <button
+                    class="btn btn--small btn--naplesYellow"
+                    id="editButton"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="btn btn--small btn--naplesYellow"
+                    id="deleteButton"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title underline">Supreme Pizza</h1>
+                <p class="card-text">
+                  Make pizza night super duper out of this world with homemade
+                  pizza. This recipe is supreme with vegetables and two types of
+                  meat. Yum!
+                </p>
+                <p class="time">
+                  <img src="./images/recipes/time.png" alt="time" />
+                  <span>1h 24min</span>
+                </p>
+                <p class="servings">
+                  <img src="./images/recipes/servings.png" alt="time" />
+                  <span>4 servings</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="footer-content"> -->
+      <div class="copyright">Copyright &copy; 2019 The Jungle Cook</div>
+      <ul class="footer-nav">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Recipes by Category</a></li>
+        <li><a href="#">Privacy and Copyright</a></li>
+        <li><a href="#">Create Recipe</a></li>
+        <li><a href="#">Your Recipes</a></li>
+      </ul>
+
+      <!-- ignore web accessibility warning since have alt on image tag -->
+      <div class="social">
+        <a href="#">
+          <img src="./images/social/facebook.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./images/social/instagram.png" alt="instagram"
+        /></a>
+      </div>
+      <!-- </div> -->
+    </footer>
+
+    <script src="lib/jquery-3.6.3.min.js"></script>
+    <script src="app/app.js" type="module"></script>
+  </body>
+</html>
