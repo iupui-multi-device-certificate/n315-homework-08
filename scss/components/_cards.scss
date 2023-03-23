@@ -1,3 +1,4 @@
+//TODO: move button-holder to bottom in mobile
 .cards {
   display: flex;
   justify-content: space-between;
@@ -6,104 +7,107 @@
   gap: 3.125rem;
 }
 
-.card-holder {
+.card {
   margin-bottom: 3.125rem;
-  // padding: 3rem;
   height: 263px;
+  border-radius: $border-radius;
+  display: flex;
 
-  .card {
-    border-radius: $border-radius;
-    display: flex;
+  .image-holder {
+    position: relative;
 
-    .image-holder {
-      position: relative;
-
-      img {
-        border-radius: $border-radius-lg;
-        max-width: 300px;
-      }
-
-      //https://www.w3schools.com/howto/howto_css_image_text.asp
-      .btn-overlay {
-        //take no chances since button is inline by default
-        // display: block;
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-      }
-
-      .button-holder {
-        display: none;
-        gap: 0.5rem;
-
-        // .btn {
-        //   cursor: pointer;
-        // }
-      }
-
-      &:hover .btn-overlay {
-        display: block;
-      }
-
-      &:hover .button-holder {
-        display: flex;
-      }
+    img {
+      border-radius: $border-radius-lg;
+      width: 100%;
+      // max-width: 300px;
     }
 
-    .card-body {
-      background-color: $light;
-      max-width: 224px;
+    //https://www.w3schools.com/howto/howto_css_image_text.asp
+    .btn-overlay {
+      //take no chances since button is inline by default
+      // display: block;
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
 
-      //https://www.devsamples.com/css/flexbox-prevent-element-stretching
-      align-self: flex-start;
+    .button-holder {
+      display: none;
+      gap: 0.5rem;
 
-      color: $dark;
-      font-family: "Lato";
-      border-radius: $border-radius-lg;
-      padding: 2.625rem 2.938rem;
+      // .btn {
+      //   cursor: pointer;
+      // }
+    }
+
+    &:hover .btn-overlay {
+      display: block;
+    }
+
+    &:hover .button-holder {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+    }
+  }
+
+  .card-body {
+    background-color: $light;
+    flex-basis: 224px;
+
+    color: $dark;
+    font-family: "Lato";
+    border-radius: $border-radius-lg;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+
+    .card-title {
+      font-weight: $dark-weight;
+      font-size: 0.938rem;
+    }
+
+    .card-text {
+      font-size: 0.563rem;
+    }
+
+    .time,
+    .servings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       gap: 1.25rem;
-
-      .card-title {
-        font-weight: $dark-weight;
-        font-size: 0.938rem;
-      }
-
-      .card-text {
-        font-size: 0.563rem;
-      }
-
-      .time,
-      .servings {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.25rem;
-        font-size: 0.625rem;
-      }
+      font-size: 0.625rem;
     }
   }
 }
 
 @media only screen and (max-width: $breakpoint-md) {
   .cards {
-    .card-holder {
-      .card {
-        .image-holder {
-          .btn-overlay {
-            display: block;
-          }
+    .card {
+      .image-holder {
+        .btn-overlay {
+          display: block;
+        }
 
-          .button-holder {
-            display: flex;
-          }
+        .button-holder {
+          display: flex;
+          justify-content: space-between;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .cards {
+    .card {
+      width: 100%;
+      flex-direction: column;
     }
   }
 }

@@ -529,22 +529,20 @@ footer {
   gap: 3.125rem;
 }
 
-.card-holder {
+.card {
   margin-bottom: 3.125rem;
   height: 263px;
-}
-.card-holder .card {
   border-radius: 1.625rem;
   display: flex;
 }
-.card-holder .card .image-holder {
+.card .image-holder {
   position: relative;
 }
-.card-holder .card .image-holder img {
+.card .image-holder img {
   border-radius: 1.875rem;
-  max-width: 300px;
+  width: 100%;
 }
-.card-holder .card .image-holder .btn-overlay {
+.card .image-holder .btn-overlay {
   display: none;
   position: absolute;
   top: 50%;
@@ -552,38 +550,38 @@ footer {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-.card-holder .card .image-holder .button-holder {
+.card .image-holder .button-holder {
   display: none;
   gap: 0.5rem;
 }
-.card-holder .card .image-holder:hover .btn-overlay {
+.card .image-holder:hover .btn-overlay {
   display: block;
 }
-.card-holder .card .image-holder:hover .button-holder {
+.card .image-holder:hover .button-holder {
   display: flex;
+  justify-content: space-between;
 }
-.card-holder .card .card-body {
+.card .card-body {
   background-color: #ffffff;
-  max-width: 224px;
-  align-self: flex-start;
+  flex-basis: 224px;
   color: #393939;
   font-family: "Lato";
   border-radius: 1.875rem;
-  padding: 2.625rem 2.938rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.25rem;
 }
-.card-holder .card .card-body .card-title {
+.card .card-body .card-title {
   font-weight: 900;
   font-size: 0.938rem;
 }
-.card-holder .card .card-body .card-text {
+.card .card-body .card-text {
   font-size: 0.563rem;
 }
-.card-holder .card .card-body .time,
-.card-holder .card .card-body .servings {
+.card .card-body .time,
+.card .card-body .servings {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,11 +590,18 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .cards .card-holder .card .image-holder .btn-overlay {
+  .cards .card .image-holder .btn-overlay {
     display: block;
   }
-  .cards .card-holder .card .image-holder .button-holder {
+  .cards .card .image-holder .button-holder {
     display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cards .card {
+    width: 100%;
+    flex-direction: column;
   }
 }
 .section-login {
