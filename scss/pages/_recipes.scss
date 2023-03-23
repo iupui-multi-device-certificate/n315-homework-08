@@ -22,14 +22,15 @@
 //   justify-content: center;
 // }
 
-// .recipe-content {
-//   width: 85%;
-//   margin: 9rem auto;
-// }
+.recipe-content {
+  width: 85%;
+  height: 100vh;
+  // margin: 3rem auto 9rem auto;
+}
 
 //https://css-tricks.com/perfect-full-page-background-image/
-//this makes it full page, still footer issue
-
+//this makes it full page
+//apply on html
 .recipe-hero {
   background: linear-gradient(
       rgba($lightTeal, $opacity),
