@@ -540,7 +540,7 @@ footer {
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 3.125rem;
+  gap: 2.5rem;
 }
 
 .card {
@@ -601,19 +601,21 @@ footer {
   gap: 0.5rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .cards {
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .card {
-    flex: 1 0 45%;
+    flex: 1 0 30%;
     max-width: 524px;
   }
   .card-row {
     display: flex;
   }
   .card-body {
+    min-height: 263px;
     flex-basis: 224px;
     max-height: 263px;
     padding: 5%;
