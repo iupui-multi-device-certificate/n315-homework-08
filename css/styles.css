@@ -121,7 +121,7 @@ a {
   text-decoration: none;
 }
 
-section {
+.content {
   margin: 0 auto;
   width: 80%;
   height: 70%;
@@ -640,4 +640,76 @@ footer {
 }
 .browse-recipes .btn-overlay {
   display: none;
+}
+
+.view-recipe {
+  font-family: "Caveat";
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+  line-height: 27px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.recipe-header {
+  display: flex;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.recipe-title {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Lato";
+  font-size: 1.563rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 33px;
+  margin-bottom: 2.188rem;
+}
+
+.overview,
+.ingredients,
+.instructions {
+  margin-bottom: 3.625rem;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+
+.instruction-list {
+  padding: 0;
+  list-style-position: inside;
+}
+
+@media only screen and (min-width: 768px) {
+  .ingredients,
+  .instructions,
+  button {
+    margin-left: 2.313rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recipe-header img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top {
+    display: flex;
+    gap: 2.813rem;
+    height: 492px;
+    margin-bottom: 3.625rem;
+  }
+  .top .overview {
+    height: 100%;
+  }
 }
