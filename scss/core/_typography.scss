@@ -24,6 +24,12 @@ $xbold-weight: 800;
 $dark-weight: 900;
 
 //font face rules
+
+//Caveat is a handwriting font (looks italic)
+//Not "italic" in the Adobe XD
+//https://www.whatfontis.com/?s3
+//result suggested "Myriad Apple Medium"
+//used Myriad Pro from Adobe
 @font-face {
   font-family: "Caveat";
   src: url("fonts/Caveat-Regular.ttf") format("truetype");
@@ -35,6 +41,22 @@ $dark-weight: 900;
 @font-face {
   font-family: "Caveat";
   src: url("fonts/Caveat-Bold.ttf") format("truetype");
+  font-weight: $bold-weight;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: $regular-weight;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Bold.ttf") format("truetype");
   font-weight: $bold-weight;
   font-style: normal;
   font-display: swap;

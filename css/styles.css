@@ -55,6 +55,20 @@ select:focus {
   font-display: swap;
 }
 @font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Gill Sans";
   src: url("fonts/GillSans.ttf") format("truetype");
   font-weight: normal;
@@ -178,7 +192,7 @@ a {
 }
 .hero .hero-cta .large-circle .hero-title {
   font-size: 1.5rem;
-  font-family: "Caveat";
+  font-family: "Myridad Pro";
   margin-bottom: 1.875rem;
   font-weight: 700;
   letter-spacing: 2.4px;
@@ -237,7 +251,7 @@ a {
   text-decoration: none;
   color: #393939;
   cursor: pointer;
-  font-family: "Caveat";
+  font-family: "Myridad Pro";
   font-size: 1.563rem;
   letter-spacing: 12.5px;
   line-height: 33px;
@@ -280,7 +294,7 @@ a {
 }
 .btn--file-selector {
   padding: 0.5rem;
-  font-family: "Caveat";
+  font-family: "Myridad Pro";
   font-size: 1rem;
   border: none;
   border-radius: 1.625rem;
@@ -414,6 +428,7 @@ legend {
   left: 0;
   z-index: 1030;
   margin-bottom: 2rem;
+  font-family: "Myriad Pro";
 }
 
 .navbar {
@@ -643,7 +658,7 @@ footer {
 }
 
 .view-recipe {
-  font-family: "Caveat";
+  font-family: "Myriad Pro";
   font-size: 1.25rem;
   letter-spacing: 4px;
   line-height: 27px;
