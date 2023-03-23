@@ -635,7 +635,7 @@ footer {
   background-size: cover;
 }
 
-.browse-recipes button {
+.browse-recipes .btn {
   display: none;
 }
 .browse-recipes .btn-overlay {
