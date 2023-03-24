@@ -3,6 +3,7 @@
 .cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   // gap: 3.125rem;
   gap: 2.5rem;
 }
@@ -71,6 +72,17 @@
 }
 
 @media only screen and (min-width: $breakpoint-md) {
+  .card-row {
+    display: flex;
+  }
+
+  .card {
+    //use 45% to take into account gap b/n items
+    flex: 1 1 30%;
+    max-width: 524px;
+  }
+}
+@media only screen and (min-width: $breakpoint-xl) {
   .cards {
     justify-content: center;
     flex-direction: row;
@@ -83,9 +95,9 @@
     max-width: 524px;
   }
 
-  .card-row {
-    display: flex;
-  }
+  // .card-row {
+  //   display: flex;
+  // }
   .card-body {
     min-height: 263px;
     flex-basis: 224px;
