@@ -81,3 +81,10 @@
     display: inline-block;
   }
 }
+
+//fix for delete button sizing
+#deleteButton {
+  font-size: 1.188rem;
+  letter-spacing: 1.9px;
+  line-height: 26px;
+}

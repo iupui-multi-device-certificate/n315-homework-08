@@ -306,6 +306,12 @@ a {
   display: inline-block;
 }
 
+#deleteButton {
+  font-size: 1.188rem;
+  letter-spacing: 1.9px;
+  line-height: 26px;
+}
+
 .form-element {
   border: none;
   border-bottom: 3px solid #393939;
@@ -630,6 +636,7 @@ footer {
   }
   .button-holder {
     justify-content: flex-start;
+    gap: 1rem;
   }
 }
 .section-login {
@@ -667,6 +674,15 @@ footer {
   display: none;
 }
 
+.your-recipes .cards {
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .your-recipes .cards {
+    justify-content: center;
+  }
+}
 .view-recipe {
   font-family: "Myriad Pro";
   font-size: 1.25rem;

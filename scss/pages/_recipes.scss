@@ -22,3 +22,17 @@
     display: none;
   }
 }
+
+.your-recipes {
+  .cards {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .your-recipes {
+    .cards {
+      justify-content: center;
+    }
+  }
+}
