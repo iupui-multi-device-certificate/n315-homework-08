@@ -33,15 +33,26 @@ footer {
   gap: 40.4px;
 }
 
-@media screen and (max-width: $breakpoint-sm) {
+@media only screen and (max-width: $breakpoint-lg) {
   footer {
-    flex-wrap: wrap;
     font-size: 0.625rem;
 
     .copyright,
     .social {
-      margin-bottom: 20px;
       font-size: 0.625rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  footer {
+    flex-wrap: wrap;
+    // font-size: 0.625rem;
+
+    .copyright,
+    .social {
+      margin-bottom: 20px;
+      // font-size: 0.625rem;
     }
     .footer-nav {
       order: 3;
