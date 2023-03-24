@@ -71,7 +71,9 @@
   gap: 0.5rem;
 }
 
-@media only screen and (min-width: $breakpoint-md) {
+// @media only screen and (min-width: $breakpoint-md) {
+//portrait tablet per W3 schools https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+@media only screen and (min-width: $breakpoint-tablet-portrait) {
   .card-row {
     display: flex;
   }
