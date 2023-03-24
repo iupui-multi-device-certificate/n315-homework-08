@@ -475,7 +475,7 @@ legend {
   background-color: #393939;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
     left: -100%;

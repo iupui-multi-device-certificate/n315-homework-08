@@ -52,7 +52,8 @@
 
 //footer shows b/c fixed. not sure how to have both?
 //this is why on mobile, they just switch to footer nav completely
-@media only screen and (max-width: $breakpoint-md) {
+// @media only screen and (max-width: $breakpoint-md) {
+@media only screen and (max-width: $breakpoint-lg) {
   .nav-menu {
     position: fixed;
     left: -100%;
